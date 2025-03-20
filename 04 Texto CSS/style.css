@@ -1,0 +1,44 @@
+*{
+    margin: 15px;
+    font-family: 'Lucida Sans Unicode';
+    /* border: solid 1px red; */
+}
+
+/* .container{
+    padding: 20px;
+} */
+
+.container1{
+    background-color: black;
+    color: white;
+}
+
+span{
+    color: aqua;
+}
+
+.container2{
+    background-color: #663399;
+    color: white;
+    font-style: italic;
+}
+
+.container3{
+    background-color: #9fc5f8;
+    text-decoration: underline;
+}
+
+.text2{
+    text-align: center;
+    margin-top: -10px;
+}
+
+.text3{
+    text-align: end;
+    margin-top: -10px;
+}
+
+.text3:hover{
+    color: #1a73e8;
+    cursor: pointer;
+}
