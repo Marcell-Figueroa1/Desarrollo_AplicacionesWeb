@@ -1,0 +1,36 @@
+*{
+    /* outline: solid 1px red; */
+    margin: 18px;
+}
+.container{
+    margin: 10px;
+    width: 200px;
+}
+.ButtonSearch{
+    height: 50px;
+    width: 180px;
+    color: #119b9d;
+    border: solid 2px #119b9d;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.ButtonAdd{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color: #00d1b2;
+    color: white;
+    border: solid 2px #00d1b2;
+    background-image: url("AddImage.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.ButtonAddAcc{
+    height: 40px;
+    width: 180px;
+    color: white;
+    background-color: #2b78e4;
+    box-shadow: 8px 7px 0px 0px black;
+    cursor: pointer;
+}
