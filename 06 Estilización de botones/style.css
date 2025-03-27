@@ -34,3 +34,7 @@
     box-shadow: 8px 7px 0px 0px black;
     cursor: pointer;
 }
+.ButtonSearch:hover{
+    color: white;
+    background-color: #119b9d;
+}
