@@ -44,8 +44,20 @@ img{
     background-color: #b16e5c;
 }
 .box5{
-    background-color: brown;
+    /* background-color: brown; */
+    animation: change-background 5s infinite;
 }
 .credits{
     text-align: center;
+}
+@keyframes change-background{
+    0%, 100%{
+        background: white;
+    }
+    25%, 50%{
+        background: gray;
+    }
+    75%{
+        background: black;
+    }
 }
