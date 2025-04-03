@@ -10,7 +10,7 @@ body{
 .nav-container{
     background-color: #333333;
     height: 75px;
-    border: solid 2px black;
+    border: solid 3px black;
     animation: Change-border 10s infinite linear;
 }
 .nav-items, .left, .right{
@@ -18,7 +18,7 @@ body{
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    gap: 8px
+    gap: 5px
 }
 .button{
     background-color: #17a2b8;
@@ -26,7 +26,7 @@ body{
     height: 30px;
     width: 80px;
     box-shadow: 4px 4px 0px 0px black ;
-    border: solid 1px #17a2b8;
+    border: solid 2px #17a2b8;
     animation: Change-border 10s infinite linear;
 }
 @keyframes Change-border{
