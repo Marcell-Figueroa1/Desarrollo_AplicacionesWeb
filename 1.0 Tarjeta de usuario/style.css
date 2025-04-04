@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    /* outline: solid 1px red; */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    height: 550px;
+    width: 800px;
+    border: solid 3px gray;
+    margin: 20px auto;
+}
+.blue-background{
+    background-color: #42a3b9;
+    height: 200px;
+}
+.foto-perfil{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    border-radius: 150px;
+    margin: -110px 0px 0px 20px;
+    border: solid 4px white;
+    justify-content: center;
+    align-items: center;
+}
+.fondo-datos{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 10px;
+    margin: 0px 0px 20px 10px;
+    gap: 10px
+}
+.fototito{
+    width: 200px;
+    height: 200px;
+}
+.img-content{
+    width: 20px;
+}
+.ubicacion1{
+    width: 15px;
+}
+.ubicacion, .link{
+    display: flex;
+}
+a{
+    color: #2b78e4;
+}
