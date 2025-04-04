@@ -10,7 +10,7 @@
     margin: 20px auto;
 }
 .blue-background{
-    background-color: #42a3b9;
+    background: linear-gradient(#42a3b9, white);
     height: 200px;
 }
 .foto-perfil{
@@ -36,6 +36,7 @@
 }
 .img-content{
     width: 20px;
+    margin-right: 5px;
 }
 .ubicacion1{
     width: 15px;
