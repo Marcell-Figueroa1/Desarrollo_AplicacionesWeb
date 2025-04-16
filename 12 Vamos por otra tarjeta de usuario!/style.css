@@ -62,3 +62,7 @@ body{
 a:hover{
     color: black;
 }
+.Boton:active{
+    transform: scale(0.9);
+    transition: 0.5s;
+}
