@@ -18,6 +18,9 @@ body{
     border-radius: 20px;
     box-shadow: 1px 1px 20px 1px black;
 }
+.trabajo{
+    color: #777777;
+}
 .fondo-datos{
     display: flex;
     flex-flow: column wrap;
@@ -47,4 +50,16 @@ body{
     font-size: 15px;
     color: white;
     border-radius: 8px;
+}
+.Boton:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.Boton:not(:hover){
+    transform: scale(1.0);
+    transition: 0.5s;
+}
+a:hover{
+    color: black;
 }
