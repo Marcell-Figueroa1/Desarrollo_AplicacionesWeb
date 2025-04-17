@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: solid 1px red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    padding: 50px;
+    background-color: #edf0f2;
+}
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 550px;
+    margin: 0 auto;
+    gap: 20px;
+}
+.icon-user{
+    display: flex;
+    width: 40px;
+    align-items: center;
+    margin-right: 10px;
+}
+.ico{
+    width: 30px;
+}
+.container1, .container2{
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    border-radius: 20px;
+}
+.contenido{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px
+
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+}
+.icons{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 40px;
+}
+h2{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.usuari{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: center;
+    gap: 20px;
+}
+.button{
+    height: 45px;
+    width: 100px;
+}
