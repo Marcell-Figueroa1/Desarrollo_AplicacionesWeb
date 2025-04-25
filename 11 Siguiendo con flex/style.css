@@ -63,7 +63,7 @@ body{
     justify-content: space-between;
     flex-flow: row wrap;
     flex: 2;
-    gap: 10px;
+    gap: 10px; 
 }
 .box-1, .box{
     padding: 18px;

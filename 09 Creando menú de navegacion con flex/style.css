@@ -9,13 +9,14 @@ body{
 }
 .nav-container{
     background-color: #333333;
-    height: 75px;
+    padding: 5px;
     border: solid 3px black;
     animation: Change-border 10s infinite linear;
 }
 .nav-items, .left, .right{
     display: flex;
     justify-content: space-between;
+    flex-flow: wrap;
     align-items: center;
     color: #fff;
     gap: 5px
@@ -23,8 +24,7 @@ body{
 .button{
     background-color: #17a2b8;
     color: white;
-    height: 30px;
-    width: 80px;
+    height: 40px;
     box-shadow: 4px 4px 0px 0px black ;
     border: solid 2px #17a2b8;
     animation: Change-border 10s infinite linear;
