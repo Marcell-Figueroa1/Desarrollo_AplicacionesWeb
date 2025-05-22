@@ -35,6 +35,6 @@ function armtrz() {
         ["ladrar", "correr"],
         ["dormir", "saltar"]
     ];
-    alert(sujeto[0]+" y "+sujeto[1]+" pueden "+acciones[0][1]+", "+acciones[1][0]+" y "+acciones[1][1]+
-        " pero solo "+sujeto[0]+" puede "+acciones[0][0])
+    alert(sujeto[2]+" y "+sujeto[1]+" pueden "+acciones[0][1]+", "+acciones[1][0]+" y "+acciones[1][1]+
+        " pero solo "+sujeto[0]+" puede "+acciones[0][0]+".")
 }
