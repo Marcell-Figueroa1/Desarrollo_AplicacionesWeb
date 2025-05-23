@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: solid 1px red;
+}
+.abuelo{
+    display: flex;
+    flex-flow: column wrap;
+    margin: 20px auto;
+    background-color: #e6e6e6;
+}
+.padre{
+    display: flex;
+    min-height: 400px;
+    padding: 20px;
+    gap: 40px;
+}
+.hijo1, .hijo2{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 40px;
+}
+.nieto1{
+    display: flex;
+    height: 300px;
+    
+    background-color: #b2b5b4;
+}
+.nieto2{
+    height: 100px;
+    background-color: #b2b5b4;
+}
+.nieto3{
+    height: 200px;
+    width: 200px;
+    background-color: #b2b5b4;
+}
+
+.hijo3, .hijo4{
+    display: flex;
+    flex-flow: wrap;
+    gap: 40px;
+}
+
+.nieto4{
+    flex: 1;
+    min-width: 200px;
+    /* height: 400px;
+    width: 250px; */
+    background-color: #b2b5b4;
+}
+.nieto5{
+    flex: 1;
+    min-width: 500px;
+    background-color: #b2b5b4;
+}
