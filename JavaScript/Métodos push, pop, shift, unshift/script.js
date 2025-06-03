@@ -27,6 +27,3 @@ function EjercicioShift () {
     let eliminado = compras.shift()
     alert(`El elemento eliminado de la lista es: ${eliminado}`)
 }
-function EjercicioCombinacion () {
-    
-}
