@@ -2,16 +2,17 @@
 ✅Ejercicio 1: Verificar mayoría de edad
 Crea una variable edad con un valor numérico.
 Si la edad es mayor o igual a 18, muestra "Acceso permitido".
-Si no, muestra "Acceso denegado". */
+Si no, muestra "Acceso denegado". 
+*/
 
 function mayorEdad (){
     let edad = parseInt(prompt("Ingrese su edad (solo números enteros): "))
 
     if (edad >= 18){
-        document.getElementById("resultado").innerHTML = `<p>Es mayor de edad: ${edad} años</p>`;
+        document.getElementById("resultado").innerHTML = `<p>Acceso permitido, tu edad: ${edad} años</p>`;
     }
     else if (edad <= 17 && edad >= 0){
-        document.getElementById("resultado").innerHTML = `<p>Es menor de edad: ${edad} años</p>`;
+        document.getElementById("resultado").innerHTML = `<p>Acceso denegado, tu edad: ${edad} años</p>`;
     }
     else{
         document.getElementById("resultado").innerHTML = `<p>El valor: <strong>${edad}</strong> es invalido.</p>`;
