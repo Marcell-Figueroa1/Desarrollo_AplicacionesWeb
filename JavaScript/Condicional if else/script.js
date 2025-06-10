@@ -156,7 +156,15 @@ function registroVisitantes (){
     }
 }
 /*
-✅ Ejercicio 8: Control de stock*/
+✅ Ejercicio 8: Control de stock
+js
+let stock = ["arroz", "fideos"];
+
+Declara la variable productoSolicitado.
+Si stock incluye el producto, muestra "Producto disponible".
+Si no, agrégalo con push() y muestra "Producto agregado al stock".
+
+*/
 
 let stock = ["arroz", "fideos"];
 function controlStock (){
@@ -172,7 +180,14 @@ function controlStock (){
 }
 
 /*
-✅ Ejercicio 9: Lista de invitados*/
+✅ Ejercicio 9: Lista de invitados
+js
+let invitados = ["Ana", "Luis", "Camila"];
+
+Declara la variable persona.
+Si la persona está en el arreglo, muestra "Bienvenido, [nombre]".
+Si no, muestra "No estás en la lista".
+*/
 
 let invitados = ["Ana", "Luis", "Camila"];
 function listaInvitados (){
@@ -187,7 +202,12 @@ function listaInvitados (){
 }
 
 /*
-✅ Ejercicio 10: Evaluar rol de usuario*/
+✅ Ejercicio 10: Evaluar rol de usuario
+let usuarios = ["Admin", "Editor", "Invitado"];
+Declara la variable rol.
+Si rol === "Admin", agrégalo al inicio con unshift() y muestra "Rol prioritario agregado".
+Si es otro rol, usa push() y muestra "Rol agregado".
+*/
 
 let usuarios = ["Admin", "Editor", "Invitado"];
 function evaluarRolUsuario (){
@@ -202,5 +222,3 @@ function evaluarRolUsuario (){
         document.getElementById("resultado").innerHTML = `<p>Rol agregado: <strong>${usuarios.join(" - ")}</strong></p>`;
     }
 }
-
-
