@@ -216,10 +216,10 @@ function evaluarRolUsuario (){
 
     if (rol === "Admin"){
         usuarios.unshift(rol);
-        document.getElementById("resultado").innerHTML = `<p>Rol prioritario agregado: <strong>${usuarios.join(" - ")}</strong></p>`;
+        document.getElementById("resultado").innerHTML = `<p>Rol prioritario agregado.</p>`;
     }
     else{
         usuarios.push(rol);
-        document.getElementById("resultado").innerHTML = `<p>Rol agregado: <strong>${usuarios.join(" - ")}</strong></p>`;
+        document.getElementById("resultado").innerHTML = `<p>Rol agregado: <br><strong>${usuarios.join(" - ")}</strong></p>`;
     }
 }
