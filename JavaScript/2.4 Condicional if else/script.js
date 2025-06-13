@@ -103,7 +103,7 @@ let saludos = [];
 function saludoCondicional (){
     let nombre = prompt("Ingrese su nombre: ");
 
-    if (nombre != ""){
+    if (nombre.trim() != ""){
         saludos.push(`Hola, ${nombre}`);
         document.getElementById("resultado").innerHTML = `<p>Saludos: <strong>${saludos.join(" - ")}</strong></p>`;
     }
@@ -121,7 +121,7 @@ Si nota < 4: muestra "Reprobado".
 */
 
 function calificarNota (){
-    let nota = parseInt(prompt("Ingrese una nota entre 1 y 7: "));
+    let nota = parseFloat(prompt("Ingrese una nota entre 1 y 7: "));
 
     if (nota >= 6 && nota <= 7){
         document.getElementById("resultado").innerHTML = `<p>Excelente: ${nota}</p>`;
