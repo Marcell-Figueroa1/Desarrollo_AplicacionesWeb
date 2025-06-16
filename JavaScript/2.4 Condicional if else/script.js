@@ -195,7 +195,7 @@ function listaInvitados (){
     let persona = prompt("Ingrese su nombre: ");
 
     if (invitados.includes(persona)){
-        document.getElementById("resultado").innerHTML = `<p>Bienvenido, <strong>${persona}</strong></p>`;
+        document.getElementById("resultado").innerHTML = `<p>Bienvenido/a, <strong>${persona}</strong></p>`;
     }
     else{
         document.getElementById("resultado").innerHTML = `<p>No estás en la lista.</p>`;
