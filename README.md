@@ -1,4 +1,4 @@
-# Mis Primeros Pasos en el Desarrollo Web 💻
+# Desarrollos_appweb 💻
 
 > Este es mi repositorio de proyectos, donde estoy aprendiendo y practicando los fundamentos del desarrollo web. Aquí iré subiendo los ejercicios y pequeños proyectos que haga mientras me familiarizo con HTML, CSS y JavaScript. 
 Mi objetivo es construir una base sólida para crear sitios web.
