@@ -145,7 +145,7 @@ function promedioNotas() {
     let cantidad = parseInt(prompt("¿Cuántas notas va a ingresar?"));
     let suma = 0;
 
-    if (isNaN(cantidad) || cantidad <= 0) {
+    if (isNaN(cantidad) || cantidad <= 0) { // La función isNaN() verifica si el valor es NaN (Not-a-Number)
         document.getElementById("resultado").innerHTML = `<p>Por favor, ingrese un número válido de notas.</p>`;
         return;
     }
@@ -188,3 +188,8 @@ function contarMayoresEdad() {
     document.getElementById("resultado").innerHTML = `<p>Total de mayores de edad: 
     <strong>${mayoresEdad}</strong></p>`;
 }
+
+// Función Isnan describela
+
+// La función isNaN() se utiliza para determinar si un valor es NaN (Not-a-Number).
+// Si el valor es NaN, la función devuelve true; de lo contrario, devuelve false.
