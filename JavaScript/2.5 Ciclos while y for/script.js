@@ -8,6 +8,10 @@ function contadorHastaN() {
     let numero = parseInt(prompt("Ingrese un número: "));
     let resultado = "";
 
+    if (isNaN(numero)) { // La función isNaN() se utiliza para determinar si un valor es NaN (Not-a-Number).
+            document.getElementById("resultado").innerHTML = `<p>Valor inválido, por favor ingrese un número.</p>`;
+            return;
+        }
 
     for (let i = 1; i <= numero; i++) {
         resultado += `${i} `;
@@ -25,6 +29,10 @@ function sumaCincoNumeros() {
     while (contador < 5) {
         let numero = parseFloat(prompt("Ingrese un número: "));
         suma += numero;
+        if (isNaN(numero)) { // La función isNaN() se utiliza para determinar si un valor es NaN (Not-a-Number).
+            document.getElementById("resultado").innerHTML = `<p>Valor inválido, por favor ingrese un número.</p>`;
+            return;
+        }
         contador++;
     }
     document.getElementById("resultado").innerHTML = `<p>Suma total de los 5 números: 
@@ -51,7 +59,7 @@ Pide un número al usuario y, usando un while, cuenta regresivamente hasta 0.
 Si el número es menor que 0, muestra "Número no válido".*/
 
 function contadorRegresivo() {
-    let numero = parseInt(prompt("Ingrese un número: "));
+    let numero = parseInt(prompt("Ingrese un número para la cuenta regresiva: "));
     let resultado = "";
 
     if (numero < 0) {
@@ -177,19 +185,16 @@ function contarMayoresEdad() {
 
     for (let i = 1; i <= cantidad; i++) {
         let edad = parseInt(prompt(`Ingrese la edad de la persona ${i}:`));
-        if (isNaN(edad)) {
+        if (isNaN(edad)) { // La función isNaN() se utiliza para determinar si un valor es NaN (Not-a-Number).
             document.getElementById("resultado").innerHTML = `<p>Edad inválida, por favor ingrese un número.</p>`;
             return;
         }
         if (edad >= 18) {
             mayoresEdad++;
         }
+
+
     }
     document.getElementById("resultado").innerHTML = `<p>Total de mayores de edad: 
     <strong>${mayoresEdad}</strong></p>`;
 }
-
-// Función Isnan describela
-
-// La función isNaN() se utiliza para determinar si un valor es NaN (Not-a-Number).
-// Si el valor es NaN, la función devuelve true; de lo contrario, devuelve false.

@@ -82,8 +82,11 @@ header{
 .resultado{
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+    text-align: center;
     color: white;
     font-size: 20px;
+    padding: 40px;
 }
 .resultado p{
     text-shadow: 0px 0px 10px cyan,
