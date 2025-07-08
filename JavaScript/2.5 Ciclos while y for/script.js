@@ -30,7 +30,7 @@ function sumaCincoNumeros() {
         let numero = parseFloat(prompt("Ingrese un número: "));
         suma += numero;
         if (isNaN(numero)) { // La función isNaN() se utiliza para determinar si un valor es NaN (Not-a-Number).
-            document.getElementById("resultado").innerHTML = `<p>Valor inválido, por favor ingrese un número.</p>`;
+            document.getElementById("resultado").innerHTML = `<p>Valor inválido, por favor ingrese solo números.</p>`;
             return;
         }
         contador++;
@@ -185,7 +185,7 @@ function contarMayoresEdad() {
 
     for (let i = 1; i <= cantidad; i++) {
         let edad = parseInt(prompt(`Ingrese la edad de la persona ${i}:`));
-        if (isNaN(edad)) { // La función isNaN() se utiliza para determinar si un valor es NaN (Not-a-Number).
+        if (isNaN(edad)) { // La función isNaN() se utiliza para determinar si un valor es NaN.
             document.getElementById("resultado").innerHTML = `<p>Edad inválida, por favor ingrese un número.</p>`;
             return;
         }
