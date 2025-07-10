@@ -12,7 +12,6 @@ function contadorHastaN() {
             document.getElementById("resultado").innerHTML = `<p>Valor inválido, por favor ingrese un número.</p>`;
             return;
         }
-
     for (let i = 1; i <= numero; i++) {
         resultado += `${i} `;
     }
@@ -60,11 +59,10 @@ function contadorRegresivo() {
     let numero = parseInt(prompt("Ingrese un número para la cuenta regresiva: "));
     let resultado = "";
 
+    if (numero < 0 || isNaN(numero)) { // La función isNaN() se utiliza para determinar si un valor es NaN (Not-a-Number).
+        alert("Número o valor no válido.");
+    }
     while (numero >= 0) {
-        if (numero < 0) {
-            document.getElementById("resultado").innerHTML = `<p>Número no válido.</p>`;
-        }
-        
         resultado += `${numero} `;
         numero--;
     }
@@ -74,7 +72,6 @@ function contadorRegresivo() {
 
 /* ✅ Ejercicio 5: Mostrar la tabla de multiplicar de un número
 Solicita al usuario un número y usa un for para mostrar su tabla de multiplicar del 1 al 10. */
-
 function tablaMultiplicar() {
     let numero = parseInt(prompt("Ingrese un número para ver su tabla de multiplicar: "));
     let resultado = "";
@@ -83,7 +80,6 @@ function tablaMultiplicar() {
         document.getElementById("resultado").innerHTML = `<p>Por favor, ingrese un número válido.</p>`;
         return;
     }
-
     for (let i = 1; i <= 10; i++) {
         resultado += `${numero} x ${i} = ${numero * i}<br>`;
     }
@@ -92,8 +88,7 @@ function tablaMultiplicar() {
 }
 
 /* ✅ Ejercicio 6: Sumar hasta que se ingrese cero
-Con while, sigue pidiendo números con prompt() y súmalos, hasta que el usuario escriba 0. Muestra el total acumulado sin do while.
-*/
+Con while, sigue pidiendo números con prompt() y súmalos, hasta que el usuario escriba 0. Muestra el total acumulado sin do while.*/
 function sumarHastaCero() {
     let suma = 0;
     let numero;
@@ -118,7 +113,6 @@ function mostrarLetras() {
     if (palabra.trim() === "") {
         document.getElementById("resultado").innerHTML = `<p>Por favor, ingrese una palabra válida.</p>`;
     }
-
     for (let i = 0; i < palabra.length; i++) {
         resultado += `${palabra[i]}<br>`;
     }
@@ -129,7 +123,6 @@ function mostrarLetras() {
 /* ✅ Ejercicio 8: Validar contraseña
 Pide una contraseña al usuario y sigue pidiendo con while hasta que escriba 
 "admin123". Luego, muestra "Acceso concedido" sin do while. */
-
 function validarContrasena() {
     let contrasena;
 
@@ -145,8 +138,7 @@ function validarContrasena() {
 }
 
 /* ✅ Ejercicio 9: Promedio de notas
-Pide con prompt() cuántas notas va a ingresar. Usa un for para pedir cada nota, calcula el promedio y lo muestra.
-*/
+Pide con prompt() cuántas notas va a ingresar. Usa un for para pedir cada nota, calcula el promedio y lo muestra.*/
 function promedioNotas() {
     let cantidad = parseInt(prompt("¿Cuántas notas va a ingresar?"));
     let suma = 0;
@@ -170,8 +162,7 @@ function promedioNotas() {
 }
 
 /* ✅ Ejercicio 10: Contar cuántos son mayores de edad
-Pide con prompt() cuántas personas vas a ingresar. Por cada persona, pide la edad y muestra al final cuántas son mayores de edad (18+).
-*/
+Pide con prompt() cuántas personas vas a ingresar. Por cada persona, pide la edad y muestra al final cuántas son mayores de edad (18+).*/
 function contarMayoresEdad() {
     let cantidad = parseInt(prompt("¿Cuántas personas va a ingresar?"));
     let mayoresEdad = 0;
@@ -190,8 +181,6 @@ function contarMayoresEdad() {
         if (edad >= 18) {
             mayoresEdad++;
         }
-
-
     }
     document.getElementById("resultado").innerHTML = `<p>Total de mayores de edad: 
     <strong>${mayoresEdad}</strong></p>`;
