@@ -41,7 +41,6 @@ function sumaCincoNumeros() {
 
 /* ✅ Ejercicio 3: Mostrar solo los pares entre 1 y 20
 Usa un for para mostrar en pantalla solo los números pares del 1 al 20. */
-
 function mostrarPares() {
     let resultado = "";
 
@@ -57,16 +56,15 @@ function mostrarPares() {
 /* ✅ Ejercicio 4: Contador regresivo con condición
 Pide un número al usuario y, usando un while, cuenta regresivamente hasta 0. 
 Si el número es menor que 0, muestra "Número no válido".*/
-
 function contadorRegresivo() {
     let numero = parseInt(prompt("Ingrese un número para la cuenta regresiva: "));
     let resultado = "";
 
-    if (numero < 0) {
-        document.getElementById("resultado").innerHTML = `<p>Número no válido.</p>`;
-    }
-
     while (numero >= 0) {
+        if (numero < 0) {
+            document.getElementById("resultado").innerHTML = `<p>Número no válido.</p>`;
+        }
+        
         resultado += `${numero} `;
         numero--;
     }
