@@ -65,3 +65,62 @@ function mostrarParImpar() {
         alert("Ingrese un número válido.");
     }
 }
+
+// 🟦 Ejercicio 4: Validar si un número es primo
+// 📌 Captura un número usando input. Luego, crea una función que reciba ese número como parámetro y 
+// retorne un mensaje indicando si el número es primo o no. Muestra el resultado con html  .
+function esPrimo(numeroPrimo) {
+    if (numeroPrimo <= 1){
+        return `El numero ${numeroPrimo} no es primo`
+    }
+    for (let i = 2; i < numeroPrimo; i++){
+        if (numeroPrimo % i === 0)
+            return `El numero ${numeroPrimo} no es primo`
+    }
+    return `El número ${numeroPrimo} es primo`;
+}
+function verificarNumeroPrimo() {
+    const inputPrimo = document.getElementById("numeroPrimo");
+    const numeroPrimo = parseInt(inputPrimo.value);
+    if(isNaN(numeroPrimo) || numeroPrimo <= 0){
+        document.getElementById("resultado").innerText = "Entrada inválida. ingrese un numero o un número mayor a 0.";
+        return;
+    }
+    resultado = esPrimo(numeroPrimo)
+    document.getElementById("resultado").innerText = `${resultado}`;
+    inputPrimo.value = ""
+    inputPrimo.focus()
+}
+
+
+// 🟦 Ejercicio 5: Calcular potencia con bucle
+// 📌 Pide al usuario una base y un exponente mediante input. Usa una función que reciba ambos valores como parámetros, 
+// calcule la potencia utilizando un bucle, y retorne el resultado. Finalmente, muestra el valor calculado en html.
+
+function CalcularPotencia(numeroBase, potencia){
+    let i = 1
+    let resultado = 1
+    while(i <= potencia){
+        resultado *= numeroBase
+        i++
+    }
+    return resultado
+}
+
+function PontenciaConBucle(){
+    const inputPotencia = document.getElementById("potencia");
+    const inputNumero = document.getElementById("numeroBase");
+    const potencia = parseInt(inputPotencia.value);
+    const numeroBase = parseInt(inputNumero.value);
+    if (isNaN(numeroBase) || isNaN(potencia)){
+        document.getElementById("resultado").innerText = "Entrada inválida. Ingrese un numero.";
+        return;
+    }
+    resultado = CalcularPotencia(numeroBase, potencia);
+    document.getElementById("resultado").innerText = `el numero base: ${numeroBase}^${potencia} = ${resultado}`;
+    inputPotencia.value = ""
+    inputPotencia.focus()
+    inputNumero.value = ""
+    inputNumero.focus()
+
+}
