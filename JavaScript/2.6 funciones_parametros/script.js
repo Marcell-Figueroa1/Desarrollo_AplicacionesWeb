@@ -43,6 +43,10 @@ function mostrarComparacion() {
     if (isNaN(num1) || isNaN(num2)) {
         alert("Ingrese solo números válidos.");
     }
+
+    input1.value = "";
+    input1.focus();
+    input2.value = "";
 }
 
 // 🟦 Ejercicio 3: Verificar si un número es par o impar
@@ -80,8 +84,8 @@ function esPrimo(numeroPrimo) {
     return `El número ${numeroPrimo} es primo`;
 }
 function verificarNumeroPrimo() {
-    const inputPrimo = document.getElementById("numeroPrimo");
-    const numeroPrimo = parseInt(inputPrimo.value);
+    let inputPrimo = document.getElementById("numeroPrimo");
+    let numeroPrimo = parseInt(inputPrimo.value);
     if(isNaN(numeroPrimo) || numeroPrimo <= 0){
         document.getElementById("resultado").innerText = "Entrada inválida. ingrese un numero o un número mayor a 0.";
         return;
@@ -108,19 +112,18 @@ function CalcularPotencia(numeroBase, potencia){
 }
 
 function PontenciaConBucle(){
-    const inputPotencia = document.getElementById("potencia");
-    const inputNumero = document.getElementById("numeroBase");
-    const potencia = parseInt(inputPotencia.value);
-    const numeroBase = parseInt(inputNumero.value);
+    let inputPotencia = document.getElementById("potencia");
+    let inputNumero = document.getElementById("numeroBase");
+    let potencia = parseInt(inputPotencia.value);
+    let numeroBase = parseInt(inputNumero.value);
     if (isNaN(numeroBase) || isNaN(potencia)){
-        document.getElementById("resultado").innerText = "Entrada inválida. Ingrese un numero.";
+        document.getElementById("resultado").innerText = "Entrada inválida. Ingrese un número.";
         return;
     }
     resultado = CalcularPotencia(numeroBase, potencia);
-    document.getElementById("resultado").innerText = `el numero base: ${numeroBase}^${potencia} = ${resultado}`;
+    document.getElementById("resultado").innerText = `El resultado de la potencia es: ${numeroBase}^${potencia} = ${resultado}`;
     inputPotencia.value = ""
     inputPotencia.focus()
     inputNumero.value = ""
     inputNumero.focus()
-
 }
