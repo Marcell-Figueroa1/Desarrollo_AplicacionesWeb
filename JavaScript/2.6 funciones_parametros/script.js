@@ -110,7 +110,6 @@ function CalcularPotencia(numeroBase, potencia){
     }
     return resultado
 }
-
 function PontenciaConBucle(){
     let inputPotencia = document.getElementById("potencia");
     let inputNumero = document.getElementById("numeroBase");
