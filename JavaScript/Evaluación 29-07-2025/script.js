@@ -11,22 +11,21 @@
 // Si el usuario ingresa 10, el resultado debe ser:
 // 1, 3, 5, 7, 9
 
-
 function numeroImpar(numero){
     let resultado = [];
     for(let i = 0; i <= numero; i++){
-        if (i % 2 !== 0) {
+        if (i % 2 !== 0){
             resultado.push(i)
         }
     }
     return resultado;
 }
-function mostrarImpar() {
+function mostrarImpar(){
     let input = document.getElementById("input1");
     let numero = parseInt(input.value);
     let resultadoFinal = numeroImpar(numero);
     document.getElementById("resultado").textContent = resultadoFinal;
-    if (isNaN(numero)) {
+    if (isNaN(numero)){
         alert("Ingrese un número válido.");
     }
 }
