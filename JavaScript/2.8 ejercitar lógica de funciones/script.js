@@ -20,7 +20,6 @@ function secuencia(numeros){
     }
     return resultado.join(", ")
 }
-
 function mostrarSecuencia(){
     let input1 = document.getElementById("input1");
     let numeros = parseFloat(input1.value);
