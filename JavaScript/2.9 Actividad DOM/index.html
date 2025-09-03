@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="text">Registro de Estudiante</h1>
+        
+        <div id="loginOverlay" class="overlay">
+            <div id="loginPanel" class="panel">
+                <form id="registerForm" class="auth-form hidden">
+                    <div class="form-group">
+                        <label>Nombre:</label>
+                        <input type="text" id="registerName" class="form-input" placeholder="Nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Edad:</label>
+                        <input type="number" id="registerLastName" class="form-input" placeholder="Edad">
+                    </div>
+                    <label>Curso:</label>
+                        <select id="select" name="curso">
+                            <option value="primero">1° Medio</option>
+                            <option value="segundo">2° Medio</option>
+                            <option value="tercero">3° Medio</option>
+                            <option value="cuarto">4° Medio</option>
+                        </select>
+                    <div class="horario">
+                        <label>Horario:</label>
+                        <p>Mañana</p>
+                        <input type="radio" id="registerPassword" class="form-input">
+                        <p>Tarde</p>
+                        <input type="radio" id="registerPassword" class="form-input">
+                    </div>
+                    <div class="terminos">
+                        <label>Acepto los terminos y condiciones</label>
+                        <input type="checkbox" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./static/js/main.js"></script>
+</body>
+</html>

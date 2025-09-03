@@ -84,6 +84,10 @@ header{
     justify-content: center;
     color: white;
     font-size: 20px;
+    padding: 40px;
+    max-width: 200px;
+    text-align: center;
+    justify-content: space-around;
 }
 .resultado p{
     text-shadow: 0px 0px 10px cyan,
