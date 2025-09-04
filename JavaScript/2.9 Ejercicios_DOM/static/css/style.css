@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: red 1px solid;
+}
+
+.formulario {
+    margin: 10vh auto;
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 40vw;
+}
+
+.box {
+    display: flex;
+    flex-flow: row wrap;
+}
+
