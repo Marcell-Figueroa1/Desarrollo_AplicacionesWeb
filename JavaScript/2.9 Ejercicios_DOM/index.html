@@ -11,25 +11,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Inicio de sesion</title>
+    <title>Registro de estudiantes</title>
 </head>
 
 <body>
     <div class="container">
         <form class="formulario">
-            
+
             <h1>Registro de estudiante</h1>
             <hr>
 
             <div class="box name">
                 <i class="fa-solid fa-user"></i>
                 <label>Nombre</label>
-                <input type="text" name="Usuario" placeholder="Nombre" required>
+                <input type="text" name="Usuario" placeholder="Nombre" class="input-box" required>
             </div>
             <div class="box edad">
                 <i class="fa-solid fa-calendar"></i>
                 <label>Edad (14-100)</label>
-                <input type="number" name="Edad" placeholder="Edad" required>
+                <input type="number" name="Edad" placeholder="Edad" class="input-box" required>
             </div>
             <div class="box curso">
                 <i class="fa-solid fa-graduation-cap"></i>
@@ -58,6 +58,7 @@
                 <input type="checkbox" name="Edad" placeholder="Edad" required>
             </div>
             <hr>
+            <div class="resultado"></div>
             <button type="submit">Enviar datos</button>
         </form>
     </div>
