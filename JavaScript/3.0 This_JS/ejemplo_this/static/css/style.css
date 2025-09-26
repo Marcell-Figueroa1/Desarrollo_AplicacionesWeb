@@ -1,0 +1,40 @@
+* {
+    outline: red solid 1px;
+}
+
+.header {
+    margin: 0 auto;
+    max-width: 70vw;
+    background-color: #cccccc;
+    padding: 10px;
+}
+
+.header-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px auto;
+    max-width: 70vw;
+}
+
+.main {
+    display: flex;
+    margin: 20px auto;
+    max-width: 70vw;
+}
+
+.container-left {
+    width: 65%;
+}
+.container-right {
+    width: 30%;
+}
+.box-left {
+    border: 1px solid black;
+}
